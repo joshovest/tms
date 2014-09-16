@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tealium Test Page</title>
+		<style type="text/css" media="screen">
+			body {
+				margin: 0;
+				margin-bottom: 25px;
+				padding: 0;
+				background-color: #f0f0f0;
+				font-family: "Lucida Grande", "Bitstream Vera Sans", "Arial";
+				font-size: 13px;
+				color: #333;
+			}
+		</style>
+		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var utag_data = {
+				page_type: 'tms test page'
+			};
+		</script>
+		<script type="text/javascript">
+			(function(a,b,c,d){
+				a='//tags.tiqcdn.com/tmu/sandbox/webanalyticsdemystified/dev/utag.js';
+				b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+				a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+			})();
+		</script>
+		<h1>Tealium Test Page</h1>
+		<ul>
+			<li>
+				<a href="http://www.webanalyticsdemystified.com" class="track">Track with jQuery</a>
+			</li>
+			<li>
+				<a href="http://www.webanalyticsdemystified.com" onclick="utag.link({ link_name: 'utag.link() test' });">Track with utag.link()</a>
+			</li>
+		</ul>
+	</body>
+</html>

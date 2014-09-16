@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GTM Test Page</title>
+		<style type="text/css" media="screen">
+			body {
+				margin: 0;
+				margin-bottom: 25px;
+				padding: 0;
+				background-color: #f0f0f0;
+				font-family: "Lucida Grande", "Bitstream Vera Sans", "Arial";
+				font-size: 13px;
+				color: #333;
+			}
+		</style>
+		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var pageData = {
+				pageType: 'tms test page'
+			};
+		</script>
+		<script type="text/javascript">
+			
+		</script>
+		<h1>GTM Test Page</h1>
+		<ul>
+			<li>
+				<a href="http://www.webanalyticsdemystified.com" class="track">Track with CSS Selector</a>
+			</li>
+			<li>
+				<a href="http://www.webanalyticsdemystified.com" onclick="dataLayer.push();">Track with dataLayer.push()</a>
+			</li>
+		</ul>
+	</body>
+</html>
